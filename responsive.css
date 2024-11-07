@@ -1,0 +1,169 @@
+@import url('global.css');
+@import url('dashboard.css');
+
+
+@media screen and (max-width: 992px) {
+    #language-select-mobile {
+        display: flex;
+    }    
+
+    #sub-header {
+        display: none;
+    }
+
+    #search-bar {
+        position: relative;
+        width: 100%; /* Ajuste o tamanho conforme necessário */
+    }
+    
+    #search-input {
+        position: absolute;
+        width: 300px;
+        top: 100%; /* Para posicionar logo abaixo do cabeçalho */
+        left: 0; /* Ancorado ao lado esquerdo */
+        border: 1px solid rgba(128, 128, 128, 0.358);
+        z-index: 999;
+    }
+
+    #search-button {
+        display: block;
+    }
+
+    #btn-favorites {
+        display: none;
+    }
+
+    .icons-interaction {
+        display: block;
+        font-size: 30px;
+    }
+
+    #interaction {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 30px;
+    }
+
+    #logotipo {
+        font-size: 15px;
+    }
+
+    #content-subheader {
+        width: 100%;
+    }
+
+    #menu-nav ul li a {
+        display: none;
+    }
+
+    #sub-header {
+        padding: 0px;
+    }
+
+    #btn-account {
+        padding: 0;
+    }
+
+    /* Conteúdo responsivo */
+    #ad-zone {
+        border-radius: 10px;
+    }
+
+    .announcement-offers {
+        font-size: 24px;
+    }
+
+    /* Menu lateral responsivo */
+
+    aside#container-menu {
+        width: 32%;
+    }
+
+    .submenu {
+        width: 300px;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Rodapé responsivo */
+    #slogan h1 {
+        font-size: 27px;
+    }
+
+    #content-footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    #vertical-line {
+        display: none;
+    }
+
+    hr {
+        display: block;
+    }
+
+    #customer-service {
+        margin-top: 20px;
+    }
+
+    #services {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 10px;
+    }
+
+    #services li {
+        padding: 0;
+    }
+
+    #services li a {
+        font-weight: lighter;
+    }
+
+    #customer-service h1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #search-bar {
+        display: none;
+    }
+
+    #search-bar-responsive {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #F0F0F0;
+        border-radius: 0px 0px 10px 10px;
+        justify-content: center;
+    }
+
+    #search-input-responsive {
+        display: flex;
+        border-radius: 0px 0px 10px 10px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.329);
+    }
+
+    #search-button-responsive {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #search-button-responsive span {
+        font-size: 27px;
+    }
+
+    .icons-interaction {
+        display: none;
+    }
+}
